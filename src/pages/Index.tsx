@@ -244,8 +244,9 @@ function Index() {
           </SidebarContent>
         </Sidebar>
 
-        <main className="flex-1 overflow-auto">
-          <div className="p-8 max-w-full">
+        <main className="flex-1 w-full overflow-x-hidden">
+          <div className="w-full h-full overflow-y-auto">
+            <div className="p-8 w-full">
             <div className="flex items-center justify-between mb-8">
               <div>
                 <h1 className="text-2xl font-bold text-foreground mb-2">
@@ -506,6 +507,7 @@ function Index() {
                 </CardContent>
               </Card>
             )}
+            </div>
           </div>
         </main>
         </div>
