@@ -20,21 +20,23 @@ export function MerchantHeader({ activeMenu }: MerchantHeaderProps) {
   };
 
   return (
-    <div className="flex items-center justify-between mb-8">
-      <div>
-        <h1 className="text-2xl font-bold text-foreground mb-2">
-          {titles[activeMenu]}
-        </h1>
-        <p className="text-muted-foreground">
-          {descriptions[activeMenu]}
-        </p>
-      </div>
-      <div className="flex items-center gap-4">
-        <Button variant="outline" size="sm">
-          Поддержка 24/7
-        </Button>
-        <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
-          <span className="text-sm font-medium text-primary-foreground">ДС</span>
+    <div className="px-8 pt-8">
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-2xl font-bold text-foreground mb-2">
+            {titles[activeMenu]}
+          </h1>
+          <p className="text-muted-foreground">
+            {descriptions[activeMenu]}
+          </p>
+        </div>
+        <div className="flex items-center gap-4">
+          <Button variant="outline" size="sm">
+            Поддержка 24/7
+          </Button>
+          <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center">
+            <span className="text-sm font-medium text-primary-foreground">ДС</span>
+          </div>
         </div>
       </div>
     </div>

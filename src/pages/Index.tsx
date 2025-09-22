@@ -26,7 +26,7 @@ function Index() {
             <MerchantHeader activeMenu={activeMenu} />
             
             <div className="flex-1 overflow-y-auto overflow-x-hidden">
-              <div className="p-8 max-w-[1600px] mx-auto">
+              <div className="p-8">
                 {activeMenu === 'dashboard' && <DashboardView />}
                 
                 {activeMenu === 'transactions' && (
