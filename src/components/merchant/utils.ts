@@ -1,5 +1,3 @@
-import { Badge } from '@/components/ui/badge';
-
 export const getStatusBadge = (status: string) => {
   const variants = {
     success: 'bg-green-500/20 text-green-400 hover:bg-green-500/30',
@@ -11,11 +9,10 @@ export const getStatusBadge = (status: string) => {
     pending: 'В обработке',
     failed: 'Ошибка'
   };
-  return (
-    <Badge className={variants[status as keyof typeof variants]}>
-      {labels[status as keyof typeof labels]}
-    </Badge>
-  );
+  return {
+    className: variants[status as keyof typeof variants],
+    label: labels[status as keyof typeof labels]
+  };
 };
 
 export const formatCurrency = (amount: number) => {

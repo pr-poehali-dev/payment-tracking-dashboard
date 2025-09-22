@@ -5,6 +5,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@
 import { Card, CardContent } from '@/components/ui/card';
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import Icon from '@/components/ui/icon';
+import { Badge } from '@/components/ui/badge';
 import { formatCurrency, formatDate, getStatusBadge } from './utils';
 import { transactions } from './data';
 import { Transaction } from './types';
@@ -139,7 +140,11 @@ export function TransactionsView({ searchTerm, setSearchTerm, statusFilter, setS
                     {formatCurrency(transaction.amount)}
                   </TableCell>
                   <TableCell>{transaction.method}</TableCell>
-                  <TableCell>{getStatusBadge(transaction.status)}</TableCell>
+                  <TableCell>
+                    <Badge className={getStatusBadge(transaction.status).className}>
+                      {getStatusBadge(transaction.status).label}
+                    </Badge>
+                  </TableCell>
                   <TableCell className="text-muted-foreground">
                     {formatDate(transaction.date)}
                   </TableCell>
