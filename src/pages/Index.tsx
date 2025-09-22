@@ -15,18 +15,18 @@ function Index() {
   return (
     <div className="dark">
       <SidebarProvider>
-        <div className="flex h-screen bg-background">
+        <div className="flex h-screen bg-background overflow-hidden">
           <MerchantSidebar 
             menuItems={menuItems}
             activeMenu={activeMenu}
             setActiveMenu={setActiveMenu}
           />
 
-          <main className="flex-1 w-full overflow-x-hidden">
-            <div className="w-full h-full overflow-y-auto">
-              <div className="p-8 w-full">
-                <MerchantHeader activeMenu={activeMenu} />
-
+          <main className="flex-1 flex flex-col min-w-0">
+            <MerchantHeader activeMenu={activeMenu} />
+            
+            <div className="flex-1 overflow-y-auto">
+              <div className="p-8">
                 {activeMenu === 'dashboard' && <DashboardView />}
                 
                 {activeMenu === 'transactions' && (
