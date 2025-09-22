@@ -245,7 +245,7 @@ function Index() {
         </Sidebar>
 
         <main className="flex-1 overflow-auto">
-          <div className="p-8">
+          <div className="p-8 max-w-full">
             <div className="flex items-center justify-between mb-8">
               <div>
                 <h1 className="text-2xl font-bold text-foreground mb-2">
@@ -309,12 +309,12 @@ function Index() {
                   </Card>
                 </div>
 
-                <Card>
+                <Card className="w-full">
                   <CardHeader>
                     <CardTitle className="text-lg font-semibold">Динамика доходов - Сентябрь 2025</CardTitle>
                   </CardHeader>
-                  <CardContent>
-                    <div className="h-80">
+                  <CardContent className="w-full">
+                    <div className="h-80 w-full">
                       <ResponsiveContainer width="100%" height="100%">
                         <AreaChart data={chartData}>
                           <defs>
