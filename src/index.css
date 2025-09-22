@@ -62,7 +62,7 @@
       sans-serif;
   }
 
-  html {
-    @apply dark;
+  html.dark {
+    color-scheme: dark;
   }
 }

@@ -208,9 +208,10 @@ function Index() {
   };
 
   return (
-    <SidebarProvider>
-      <div className="flex h-screen bg-background">
-        <Sidebar className="border-r border-border">
+    <div className="dark">
+      <SidebarProvider>
+        <div className="flex h-screen bg-background">
+          <Sidebar className="border-r border-border">
           <SidebarHeader className="p-6">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
@@ -507,8 +508,9 @@ function Index() {
             )}
           </div>
         </main>
-      </div>
-    </SidebarProvider>
+        </div>
+      </SidebarProvider>
+    </div>
   );
 }
 
