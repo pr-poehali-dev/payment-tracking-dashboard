@@ -47,7 +47,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     try {
       setIsLoading(true);
       
-      const response = await fetch('https://functions.poehali.dev/ddeabc14-dfec-4f98-8a11-c06ff5ee52a2', {
+      const response = await fetch('https://functions.poehali.dev/9dc9b1b2-0d40-480f-b02a-4c4e9db80410', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -76,7 +76,7 @@ export function AuthProvider({ children }: AuthProviderProps) {
     try {
       setIsLoading(true);
       
-      const response = await fetch('https://functions.poehali.dev/ddeabc14-dfec-4f98-8a11-c06ff5ee52a2', {
+      const response = await fetch('https://functions.poehali.dev/9dc9b1b2-0d40-480f-b02a-4c4e9db80410', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
