@@ -18,7 +18,7 @@ export function MerchantSidebar({ menuItems, activeMenu, setActiveMenu }: Mercha
           </div>
           <div>
             <h1 className="text-lg font-semibold text-foreground">Merchant</h1>
-            <p className="text-sm text-muted-foreground">Эквайринг система</p>
+            <p className="text-sm text-muted-foreground">Платёжная система для бизнеса</p>
           </div>
         </div>
       </SidebarHeader>
