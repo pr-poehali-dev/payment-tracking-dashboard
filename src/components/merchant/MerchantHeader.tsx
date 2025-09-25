@@ -6,7 +6,7 @@ interface MerchantHeaderProps {
 
 export function MerchantHeader({ activeMenu }: MerchantHeaderProps) {
   const titles: Record<string, string> = {
-    dashboard: 'Дашборд',
+    dashboard: 'Платёжная панель',
     transactions: 'Транзакции',
     analytics: 'Аналитика',
     support: 'Поддержка'
