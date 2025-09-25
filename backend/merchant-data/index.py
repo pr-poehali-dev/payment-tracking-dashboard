@@ -99,8 +99,8 @@ def handler(event: Dict[str, Any], context: Any) -> Dict[str, Any]:
                 'totalCommission': total_commission,
                 'netIncome': total_revenue - total_commission,
                 'successfulTransactions': successful_transactions,
-                'revenueGrowth': '+12.5%',
-                'incomeGrowth': '+8.2%'
+                'revenueGrowth': '+15.3%',
+                'incomeGrowth': '+11.7%'
             }
         }
         

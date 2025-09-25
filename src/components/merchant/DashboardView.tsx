@@ -25,7 +25,7 @@ export function DashboardView() {
   useEffect(() => {
     const fetchDashboardData = async () => {
       try {
-        const response = await fetch('https://functions.poehali.dev/d6b04aa3-f9ed-4103-91b1-1acd55384d32');
+        const response = await fetch('https://functions.poehali.dev/e4bf3651-181e-4fff-a673-d351f6a96e76');
         const data = await response.json();
         setDashboardData(data);
       } catch (error) {
